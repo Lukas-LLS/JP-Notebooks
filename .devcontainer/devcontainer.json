@@ -1,0 +1,18 @@
+{
+  "name": "Python - Anaconda",
+  "image": "mcr.microsoft.com/devcontainers/anaconda:latest",
+  "forwardPorts": [
+    8888
+  ],
+  "postCreateCommand": [
+    "conda install -y -c conda-forge numpy pandas seaborn scikit-learn jupyter"
+  ],
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-toolsai.jupyter"
+      ]
+    }
+  }
+}
